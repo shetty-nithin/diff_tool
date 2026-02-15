@@ -1,0 +1,5 @@
+Start
+Initialize config
+Run process
+Cleanup
+End
