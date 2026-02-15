@@ -1,4 +1,6 @@
-Start
-Load config
-Run process
-End
+Apple
+Banana
+Cherry
+Date
+Elderberry
+Grapes

@@ -1,5 +1,7 @@
-Start
-Initialize config
-Run process
-Cleanup
-End
+Apple
+Blueberry
+Cherry
+Dragonfruit
+Elderberry
+Fig
+Orange
