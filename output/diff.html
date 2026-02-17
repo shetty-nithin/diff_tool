@@ -40,11 +40,51 @@ tr.equal { background: white; }
 
 <table>
 
+<tr class="delete">
+    <td class="ln">1</td>
+    <td class="code">2026-02-17 00:01:02 INFO  [AuthService] Starting authentication module</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">2</td>
+    <td class="code">2026-02-17 00:01:03 INFO  [DBPool] Connection pool initialized size=10</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">3</td>
+    <td class="code">2026-02-17 00:01:05 INFO  [Cache] Redis cache connected host=127.0.0.1 port=6379</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">4</td>
+    <td class="code">2026-02-17 00:01:07 WARN  [Config] Deprecated setting detected: enable_legacy_auth</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">5</td>
+    <td class="code">2026-02-17 00:01:10 INFO  [Server] Server started on port 8080</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
 <tr class="insert">
     <td class="ln"></td>
     <td class="code"></td>
     <td class="ln">1</td>
-    <td class="code">Apple</td>
+    <td class="code">2026-02-17 00:01:02 INFO  [AuthService] Starting authentication module</td>
 </tr>
 
 
@@ -52,7 +92,7 @@ tr.equal { background: white; }
     <td class="ln"></td>
     <td class="code"></td>
     <td class="ln">2</td>
-    <td class="code">Blueberry</td>
+    <td class="code">2026-02-17 00:01:03 INFO  [DBPool] Connection pool initialized size=12</td>
 </tr>
 
 
@@ -60,7 +100,7 @@ tr.equal { background: white; }
     <td class="ln"></td>
     <td class="code"></td>
     <td class="ln">3</td>
-    <td class="code">Cherry</td>
+    <td class="code">2026-02-17 00:01:05 INFO  [Cache] Redis cache connected host=127.0.0.1 port=6379</td>
 </tr>
 
 
@@ -68,23 +108,39 @@ tr.equal { background: white; }
     <td class="ln"></td>
     <td class="code"></td>
     <td class="ln">4</td>
-    <td class="code">Dragonfruit</td>
+    <td class="code">2026-02-17 00:01:10 INFO  [Server] Server started on port 8081</td>
 </tr>
 
 
-<tr class="insert">
-    <td class="ln"></td>
-    <td class="code"></td>
-    <td class="ln">5</td>
-    <td class="code">Elderberry</td>
-</tr>
-
-
-<tr class="insert">
-    <td class="ln"></td>
-    <td class="code"></td>
+<tr class="equal">
     <td class="ln">6</td>
-    <td class="code">Fig</td>
+    <td class="code">2026-02-17 00:01:12 INFO  [Scheduler] Job cleanup_temp scheduled interval=3600</td>
+    <td class="ln">5</td>
+    <td class="code">2026-02-17 00:01:12 INFO  [Scheduler] Job cleanup_temp scheduled interval=3600</td>
+</tr>
+
+
+<tr class="equal">
+    <td class="ln">7</td>
+    <td class="code">2026-02-17 00:01:14 INFO  [AuthService] Login request user_id=1823</td>
+    <td class="ln">6</td>
+    <td class="code">2026-02-17 00:01:14 INFO  [AuthService] Login request user_id=1823</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">8</td>
+    <td class="code">2026-02-17 00:01:14 INFO  [AuthService] Login success user_id=1823 session=abc123</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">9</td>
+    <td class="code">2026-02-17 00:01:18 INFO  [API] GET /api/profile status=200 time=32ms</td>
+    <td class="ln"></td>
+    <td class="code"></td>
 </tr>
 
 
@@ -92,55 +148,471 @@ tr.equal { background: white; }
     <td class="ln"></td>
     <td class="code"></td>
     <td class="ln">7</td>
-    <td class="code">Orange</td>
+    <td class="code">2026-02-17 00:01:14 WARN  [AuthService] Login retry user_id=1823</td>
 </tr>
 
 
 <tr class="delete">
-    <td class="ln">1</td>
-    <td class="code">Apple</td>
+    <td class="ln">10</td>
+    <td class="code">2026-02-17 00:01:20 INFO  [API] GET /api/data status=200 time=45ms</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">8</td>
+    <td class="code">2026-02-17 00:01:15 INFO  [AuthService] Login success user_id=1823 session=xyz888</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">9</td>
+    <td class="code">2026-02-17 00:01:18 INFO  [API] GET /api/profile status=200 time=29ms</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">10</td>
+    <td class="code">2026-02-17 00:01:20 INFO  [API] GET /api/data status=200 time=44ms</td>
+</tr>
+
+
+<tr class="equal">
+    <td class="ln">11</td>
+    <td class="code">2026-02-17 00:01:24 ERROR [DB] Query timeout id=q7721 duration=5001ms</td>
+    <td class="ln">11</td>
+    <td class="code">2026-02-17 00:01:24 ERROR [DB] Query timeout id=q7721 duration=5001ms</td>
+</tr>
+
+
+<tr class="equal">
+    <td class="ln">12</td>
+    <td class="code">2026-02-17 00:01:25 INFO  [Retry] Retrying query id=q7721 attempt=1</td>
+    <td class="ln">12</td>
+    <td class="code">2026-02-17 00:01:25 INFO  [Retry] Retrying query id=q7721 attempt=1</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">13</td>
+    <td class="code">2026-02-17 00:01:27 INFO  [DB] Query success id=q7721 duration=88ms</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">13</td>
+    <td class="code">2026-02-17 00:01:26 INFO  [Retry] Retrying query id=q7721 attempt=2</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">14</td>
+    <td class="code">2026-02-17 00:01:27 INFO  [DB] Query success id=q7721 duration=91ms</td>
+</tr>
+
+
+<tr class="equal">
+    <td class="ln">14</td>
+    <td class="code">2026-02-17 00:01:30 INFO  [Worker] Task started id=task991</td>
+    <td class="ln">15</td>
+    <td class="code">2026-02-17 00:01:30 INFO  [Worker] Task started id=task991</td>
+</tr>
+
+
+<tr class="equal">
+    <td class="ln">15</td>
+    <td class="code">2026-02-17 00:01:33 INFO  [Worker] Task progress id=task991 percent=40</td>
+    <td class="ln">16</td>
+    <td class="code">2026-02-17 00:01:33 INFO  [Worker] Task progress id=task991 percent=40</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">16</td>
+    <td class="code">2026-02-17 00:01:37 INFO  [Worker] Task progress id=task991 percent=75</td>
     <td class="ln"></td>
     <td class="code"></td>
 </tr>
 
 
 <tr class="delete">
-    <td class="ln">2</td>
-    <td class="code">Banana</td>
+    <td class="ln">17</td>
+    <td class="code">2026-02-17 00:01:41 INFO  [Worker] Task completed id=task991 duration=11s</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">17</td>
+    <td class="code">2026-02-17 00:01:36 INFO  [Worker] Task progress id=task991 percent=60</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">18</td>
+    <td class="code">2026-02-17 00:01:44 INFO  [API] POST /api/upload status=201 time=120ms</td>
     <td class="ln"></td>
     <td class="code"></td>
 </tr>
 
 
 <tr class="delete">
-    <td class="ln">3</td>
-    <td class="code">Cherry</td>
+    <td class="ln">19</td>
+    <td class="code">2026-02-17 00:01:46 WARN  [Security] Suspicious IP detected 192.168.1.77</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">18</td>
+    <td class="code">2026-02-17 00:01:41 INFO  [Worker] Task completed id=task991 duration=11s</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">20</td>
+    <td class="code">2026-02-17 00:01:49 INFO  [Security] IP blocked 192.168.1.77</td>
     <td class="ln"></td>
     <td class="code"></td>
 </tr>
 
 
 <tr class="delete">
-    <td class="ln">4</td>
-    <td class="code">Date</td>
+    <td class="ln">21</td>
+    <td class="code">2026-02-17 00:01:52 INFO  [Cache] Cache hit key=user_1823</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">19</td>
+    <td class="code">2026-02-17 00:01:44 INFO  [API] POST /api/upload status=500 time=118ms</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">22</td>
+    <td class="code">2026-02-17 00:01:55 INFO  [Cache] Cache miss key=user_9981</td>
     <td class="ln"></td>
     <td class="code"></td>
 </tr>
 
 
 <tr class="delete">
-    <td class="ln">5</td>
-    <td class="code">Elderberry</td>
+    <td class="ln">23</td>
+    <td class="code">2026-02-17 00:01:58 INFO  [DB] Insert success table=orders id=5001</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">20</td>
+    <td class="code">2026-02-17 00:01:46 WARN  [Security] Suspicious IP detected 192.168.1.77</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">24</td>
+    <td class="code">2026-02-17 00:02:01 INFO  [Email] Sending email id=msg881</td>
     <td class="ln"></td>
     <td class="code"></td>
 </tr>
 
 
 <tr class="delete">
-    <td class="ln">6</td>
-    <td class="code">Grapes</td>
+    <td class="ln">25</td>
+    <td class="code">2026-02-17 00:02:02 INFO  [Email] Delivered id=msg881 latency=1.2s</td>
     <td class="ln"></td>
     <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">21</td>
+    <td class="code">2026-02-17 00:01:52 INFO  [Cache] Cache hit key=user_1823</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">26</td>
+    <td class="code">2026-02-17 00:02:05 INFO  [Metrics] CPU=42% MEM=68%</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">27</td>
+    <td class="code">2026-02-17 00:02:10 INFO  [Metrics] CPU=44% MEM=69%</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">22</td>
+    <td class="code">2026-02-17 00:01:55 INFO  [Cache] Cache miss key=user_1111</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">28</td>
+    <td class="code">2026-02-17 00:02:15 INFO  [Metrics] CPU=47% MEM=71%</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">29</td>
+    <td class="code">2026-02-17 00:02:20 WARN  [Metrics] CPU spike detected value=89%</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">23</td>
+    <td class="code">2026-02-17 00:01:58 INFO  [DB] Insert success table=orders id=5001</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">30</td>
+    <td class="code">2026-02-17 00:02:22 INFO  [AutoScale] Scaling workers from=4 to=6</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">31</td>
+    <td class="code">2026-02-17 00:02:27 INFO  [Worker] Spawned worker id=w12</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">24</td>
+    <td class="code">2026-02-17 00:02:01 INFO  [Email] Sending email id=msg881</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">32</td>
+    <td class="code">2026-02-17 00:02:30 INFO  [Worker] Spawned worker id=w13</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">33</td>
+    <td class="code">2026-02-17 00:02:34 INFO  [API] GET /api/data status=200 time=39ms</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">25</td>
+    <td class="code">2026-02-17 00:02:05 INFO  [Metrics] CPU=41% MEM=65%</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">34</td>
+    <td class="code">2026-02-17 00:02:39 ERROR [Payment] Payment failed order=5002 reason=card_declined</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">35</td>
+    <td class="code">2026-02-17 00:02:41 INFO  [Payment] Retry scheduled order=5002 delay=60s</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">26</td>
+    <td class="code">2026-02-17 00:02:10 INFO  [Metrics] CPU=46% MEM=70%</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">36</td>
+    <td class="code">2026-02-17 00:02:45 INFO  [Health] All systems operational</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">37</td>
+    <td class="code">2026-02-17 00:02:50 INFO  [Cleanup] Removed temp files count=18</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">27</td>
+    <td class="code">2026-02-17 00:02:15 INFO  [Metrics] CPU=51% MEM=75%</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">28</td>
+    <td class="code">2026-02-17 00:02:20 WARN  [Metrics] CPU spike detected value=91%</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">29</td>
+    <td class="code">2026-02-17 00:02:22 INFO  [AutoScale] Scaling workers from=4 to=8</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">38</td>
+    <td class="code">2026-02-17 00:02:55 INFO  [Scheduler] Job cleanup_temp completed duration=5s</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">30</td>
+    <td class="code">2026-02-17 00:02:27 INFO  [Worker] Spawned worker id=w12</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">31</td>
+    <td class="code">2026-02-17 00:02:30 INFO  [Worker] Spawned worker id=w14</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">32</td>
+    <td class="code">2026-02-17 00:02:34 INFO  [API] GET /api/data status=200 time=38ms</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">33</td>
+    <td class="code">2026-02-17 00:02:39 ERROR [Payment] Payment failed order=5002 reason=insufficient_funds</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">34</td>
+    <td class="code">2026-02-17 00:02:41 INFO  [Payment] Retry scheduled order=5002 delay=30s</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">35</td>
+    <td class="code">2026-02-17 00:02:45 INFO  [Health] All systems operational</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">36</td>
+    <td class="code">2026-02-17 00:02:50 INFO  [Cleanup] Removed temp files count=22</td>
+</tr>
+
+
+<tr class="delete">
+    <td class="ln">39</td>
+    <td class="code">2026-02-17 00:03:00 INFO  [Server] Heartbeat OK</td>
+    <td class="ln"></td>
+    <td class="code"></td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">37</td>
+    <td class="code">2026-02-17 00:02:55 INFO  [Scheduler] Job cleanup_temp completed duration=6s</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">38</td>
+    <td class="code">2026-02-17 00:03:00 INFO  [Server] Heartbeat OK</td>
+</tr>
+
+
+<tr class="insert">
+    <td class="ln"></td>
+    <td class="code"></td>
+    <td class="ln">39</td>
+    <td class="code">2026-02-17 00:03:05 INFO  [Backup] Snapshot saved id=snap771</td>
 </tr>
 
 </table>

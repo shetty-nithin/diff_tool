@@ -1,3 +1,10 @@
 Observation 1:
-    Least Common Subsequence algorithm for finding the difference betwee A.txt andB.txt works file if the last line is matching.
-    If the last is not matching, then all the lines of A.txt are shown as deleted and all the lines of B.txt are shown as inserted.
+    Difference Report generated using LCS algorithm shows all the lines from the A.txt are DELETED and all the lines from the B.txt are INSERTED.
+
+    When the DP table is ready, it stores the information about the cost(number of edit required) of coverting one string to another.
+    When the lines of both A.txt and B.txt matches, then there is no cost of edit. If the lines doent match and if the subsequences dp[i-1][j] and dp[i][j-1],
+    costs the same edit, it creates an issue.
+    Because, as per the current algorithm, line of A.txt is assumed to be DELETED. Therefore all the lines in the A.txt file are stored as DELETED. And once i !> 0, 
+    remaining lines of B.txt will stored as INSERTED.
+    
+    This means, the algorithm is biased towards DELETION fist.
