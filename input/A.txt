@@ -2,7 +2,7 @@
 2026-02-17 00:01:03 INFO  [DBPool] Connection pool initialized size=10
 2026-02-17 00:01:05 INFO  [Cache] Redis cache connected host=127.0.0.1 port=6379
 2026-02-17 00:01:07 WARN  [Config] Deprecated setting detected: enable_legacy_auth
-2026-02-17 00:01:10 INFO  [Server] Server started on port 8080
+2026-02-17 00:01:08 INFO  [Nithin Shetty]
 2026-02-17 00:01:12 INFO  [Scheduler] Job cleanup_temp scheduled interval=3600
 2026-02-17 00:01:14 INFO  [AuthService] Login request user_id=1823
 2026-02-17 00:01:14 INFO  [AuthService] Login success user_id=1823 session=abc123

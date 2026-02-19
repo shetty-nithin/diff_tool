@@ -1,5 +1,4 @@
 def build_lcs_table(A, B):
-    print(B)
     m, n = len(A), len(B)
     dp = [[0] * (n+1) for _ in range(m+1)]
 

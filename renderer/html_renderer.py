@@ -52,31 +52,34 @@ def render_html(diff):
     rows = []
     left_ln = right_ln = 1
 
-    for tag, line in diff:
-        line = escape_html(line.rstrip("\n"))
+    for tag, left_text, right_text in diff:
+        left_escaped = escape_html(left_text.rstrip("\n")) if left_text else ""
+        right_escaped = escape_html(right_text.rstrip("\n")) if right_text else ""
 
         if tag == "equal":
-            rows.append(row("equal", left_ln, right_ln, line, line))
+            rows.append(row("equal", left_ln, right_ln, left_escaped, right_escaped))
             left_ln += 1
             right_ln += 1
 
         elif tag == "delete":
-            rows.append(row("delete", left_ln, "", line, ""))
+            rows.append(row("delete", left_ln, "", left_escaped, ""))
             left_ln += 1
 
         elif tag == "insert":
-            rows.append(row("insert", "", right_ln, "", line))
+            rows.append(row("insert", "", right_ln, "", right_escaped))
             right_ln += 1
 
     return HTML_TEMPLATE.format(rows="\n".join(rows))
 
 
 def row(cls, lno, rno, left, right):
+    left_display = left if left.strip() != "" else "&nbsp;"
+    right_display = right if right.strip() != "" else "&nbsp;"
     return f"""
 <tr class="{cls}">
     <td class="ln">{lno}</td>
-    <td class="code">{left}</td>
+    <td class="code">{left_display}</td>
     <td class="ln">{rno}</td>
-    <td class="code">{right}</td>
+    <td class="code">{right_display}</td>
 </tr>
 """
